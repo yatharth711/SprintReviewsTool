@@ -123,6 +123,13 @@ docker compose -f dev.yml up db
 <hr>
 About us:
 
+Contributing Members:
+
+- [Brendan Michaud](https://github.com/ThatOth3rGuy)
+- [Eric Harrison](https://github.com/EricHarrison72)
+- [Tithi Soni](https://www.linkedin.com/in/tithi-soni/)
+- [Yatharth Mathur ](https://yatharth711.github.io/)
+
 ![image](https://github.com/user-attachments/assets/1e22a1fd-d8af-4463-b886-de392d1c8d93)
 
 
