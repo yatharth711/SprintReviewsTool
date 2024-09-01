@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Automated tests are placed into the test. You can create subfolders are different categories of testing.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "test": "playwright test --config=playwright.config.ts",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "jest": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "jest": "^29.7.0",
+    "node-mocks-http": "^1.15.0",
+    "playwright": "^1.44.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.8",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

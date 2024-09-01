@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .header{
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+    width: 100%;
+    margin-bottom: auto;
+    margin-left: 11vw;
+    padding: 1%;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin-bottom: auto;
+    min-height: 80%;
+  }
+  
+  .assignmentsSection {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 1.5%;
+    padding-top: 1%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: 2%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .innerTitle{
+    display: flex;
+    text-align: left;
+  }
+
+  .actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .courseCards {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* min-width: 50vw; */
+    max-width: 75vw;
+    gap: 2%;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  .courseCard {
+    width: 95%;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+  }
+
+  .notificationsSection {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 1%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  
+  .notificationsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .notificationCard {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .listboxWrapper {
+    width: 100%;
+    max-width: 260px;
+    border: 1px solid var(--nextui-colors-border);
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .actionListbox {
+    background-color: white;
+  }
+  
+  .deleteAction {
+    color: var(--nextui-colors-danger) !important;
+  }
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .mainContent {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .assignmentsSection,
+    .notificationsSection {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .courseCards {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .actionButtons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .outerCard {
+    width: 100%;
+    background-color: #fcf9f7;
+    border: 1px solid #04124b;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    transition: transform 0.2s;
+    align-items: center;
+    padding: 1%;
+    position: relative;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  

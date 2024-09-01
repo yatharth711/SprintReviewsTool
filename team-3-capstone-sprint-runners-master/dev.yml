@@ -1,0 +1,47 @@
+services:
+  app:
+    container_name: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    environment:
+      - ENV_VARIABLE=${ENV_VARIABLE}
+      - NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
+      - DEV_DB_HOST=${DEV_DB_HOST}
+      - DEV_DB_PORT=${DEV_DB_PORT}
+      - DEV_DB_USER=${DEV_DB_USER}
+      - DEV_DB_PASSWORD=${DEV_DB_PASSWORD}
+      - DEV_DB_NAME=${DEV_DB_NAME}
+    env_file:
+      - .env
+    volumes:
+      - ./app/src:/app/src
+      - ./app/public:/app/public
+      - ./app/server-test:/app/server-test
+    restart: always
+    ports:
+      - "${NEXTJS_APP_LOCAL_PORT}:${NEXTJS_APP_DOCKER_PORT}"
+    networks:
+      - my_network
+
+  db:
+    image: mysql:latest
+    restart: always
+    cap_add:
+      - SYS_NICE
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQLDB_PASSWORD}
+      - MYSQL_DATABASE=${MYSQLDB_DATABASE}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - my_network
+    ports:
+      - "${MYSQLDB_LOCAL_PORT}:${MYSQLDB_DOCKER_PORT}"
+
+volumes:
+  db_data:
+
+networks:
+  my_network:

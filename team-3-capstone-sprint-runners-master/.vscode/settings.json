@@ -1,0 +1,9 @@
+{
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "master"
+    ],
+    
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
+}

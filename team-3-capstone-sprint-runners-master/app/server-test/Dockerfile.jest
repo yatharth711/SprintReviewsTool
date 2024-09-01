@@ -1,0 +1,11 @@
+# Dockerfile.jest
+FROM node:latest
+
+WORKDIR /app/server-test
+
+COPY ./app/server-test/package*.json ./
+RUN npm install
+
+COPY ./app/server-test/__tests__ .
+
+CMD ["npm", "test"]

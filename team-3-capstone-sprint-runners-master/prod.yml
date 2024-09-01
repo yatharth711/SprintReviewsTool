@@ -1,0 +1,62 @@
+services:
+  app:
+    container_name: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    environment:
+      ENV_VARIABLE: ${ENV_VARIABLE}
+      NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
+    env_file:
+      - .env
+    volumes:
+      - ./app/src:/app/src
+      - ./app/public:/app/public
+      - ./app/server-test:/app/server-test
+    restart: always
+    ports:
+      - "3001:3000"
+    networks:
+      - my_network
+    depends_on:
+      - db
+  
+  playwright-tests:
+    container_name: playwright-tests
+    build:
+      context: ./app/server-test
+      dockerfile: pw.Dockerfile # Ensure Dockerfile for Playwright setup exists here
+    volumes:
+      - ./app/server-test:/app/server-test
+    depends_on:
+      - app
+      - db
+    networks:
+      - my_network
+    working_dir: /app/server-test
+    environment: # Add any required environment variables for your tests here
+      ENV_VARIABLE: ${ENV_VARIABLE}
+      NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
+    
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=SprintRunners
+      - MYSQL_DATABASE=mydb
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - my_network
+    ports:
+      - "3307:3306"
+
+volumes:
+  db_data:
+  # Add more containers below OUR DB BUILD***
+
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  my_network:

@@ -1,0 +1,88 @@
+.archiveChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #e7f6fe;
+    border: 1px solid #04124b;
+    box-sizing: border-box;
+    width: 296px;
+    height: 61px;
+}
+.archiveCourse {
+    position: absolute;
+    top: 1px;
+    left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    height: 60px;
+}
+.archive {
+    position: absolute;
+    top: 34px;
+    left: 48px;
+    width: 296px;
+    height: 61px;
+    cursor: pointer;
+}
+.deleteChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #e7f6fe;
+    border: 1px solid #04124b;
+    box-sizing: border-box;
+    width: 296px;
+    height: 61px;
+}
+.delete {
+    position: absolute;
+    top: 95px;
+    left: 48px;
+    width: 296px;
+    height: 61px;
+    cursor: pointer;
+    color: #d40a0a;
+}
+.arrowChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 36px;
+    height: 22.8px;
+}
+.arrowItem {
+    position: absolute;
+    top: 5.95px;
+    left: 17.78px;
+    border-radius: 1px;
+    background-color: #e7f6fe;
+    width: 24px;
+    height: 25px;
+    transform:  rotate(43.8deg);
+    transform-origin: 0 0;
+}
+.arrow {
+    position: absolute;
+    top: 12px;
+    left: 283px;
+    width: 36px;
+    height: 40.1px;
+}
+.adminCourseOptions {
+    width: 389px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 190px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #04124b;
+    font-family: 'Inria Serif';
+}
+

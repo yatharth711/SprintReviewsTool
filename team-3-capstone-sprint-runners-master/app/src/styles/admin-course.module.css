@@ -1,0 +1,72 @@
+.courseAdminChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.courseName {
+    position: absolute;
+    height: 37.05%;
+    width: 70%;
+    top: 17.58%;
+    left: 2.59%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.instructor {
+    position: absolute;
+    height: 23.16%;
+    width: 25%;
+    top: 58.95%;
+    left: 2.6%;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+.gradePendingRelease {
+    position: absolute;
+    height: 30.53%;
+    width: 20.15%;
+    top: 34.74%;
+    left: 73.63%;
+    display: flex;
+    font-weight: 700;
+    color: #285943;
+    text-align: right;
+    align-items: center;
+}
+.moreIcon {
+    position: absolute;
+    height: 49.47%;
+    width: 4.64%;
+    top: 25.26%;
+    right: 1.58%;
+    bottom: 25.26%;
+    left: 93.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.courseAdmin {
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    position: relative;
+    height: 95px;
+    text-align: left;
+    font-size: 20px;
+    color: #04124b;
+    font-family: 'Inria Serif';
+    cursor: pointer;
+}
+

@@ -1,0 +1,29 @@
+services:
+  app:
+    environment:
+      - ENV_VARIABLE=testing
+      - NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
+      - DEV_DB_HOST=test
+      - DEV_DB_PORT=${DEV_DB_PORT}
+      - DEV_DB_USER=${DEV_DB_USER}
+      - DEV_DB_PASSWORD=SprintRunnersTest
+      - DEV_DB_NAME=testdb
+      
+  test:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=SprintRunnersTest
+      - MYSQL_DATABASE=testdb
+    volumes:
+      - test_db_data:/var/lib/mysql
+      - ./test.sql:/docker-entrypoint-initdb.d/test.sql
+    networks:
+      - my_network
+    ports:
+      - "3309:${MYSQLDB_DOCKER_PORT}"
+
+volumes:
+  test_db_data:
+
+networks:
+  my_network:

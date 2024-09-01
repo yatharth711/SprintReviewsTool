@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,700;1,700&display=swap');
+body {
+  	margin: 0; line-height: normal;
+	background-color: #f4f4f4;
+	font-family:"Inria Serif";
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+h1{
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+h2{
+	font-size: x-large;
+	font-weight: bold;
+}
+
+h3{
+	font-size: large;
+	font-weight: bold;
+}

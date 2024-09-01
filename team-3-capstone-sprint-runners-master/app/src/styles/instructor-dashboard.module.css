@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  background: inherit;
+  width: 100%;
+  margin-left: 12vw;
+  padding: 1%;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.courseCards {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  /* min-width: 50vw; */
+  max-width: 75vw;
+  gap: 0.5%;
+  text-align: left;
+  justify-content: left;
+}
+
+.courseCard {
+  margin: 2%;
+  min-width: 20vw;
+}
+
+.notificationsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notificationCard {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

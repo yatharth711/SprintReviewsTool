@@ -1,0 +1,76 @@
+.multiplyIcon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.confirmDelete {
+    position: absolute;
+    height: 20.97%;
+    width: 73.55%;
+    top: 8.04%;
+    left: 13.22%;
+    font-size: 35px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+.onceYouConfirm {
+    position: absolute;
+    height: 26.58%;
+    width: 86.54%;
+    top: 29.87%;
+    left: 8.2%;
+    display: inline-block;
+    text-align: left;
+}
+.instructorButtonChild {
+    position: absolute;
+    height: 98.37%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 1.63%;
+    left: 0%;
+    border-radius: 15px;
+    background-color: #d40a0a;
+    border: 1px solid #04124b;
+    box-sizing: border-box;
+}
+.createAssignment {
+    position: absolute;
+    height: 98.37%;
+    width: 89.29%;
+    top: 1.67%;
+    left: 5.51%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instructorButton {
+    position: absolute;
+    top: 214px;
+    left: 193px;
+    width: 126px;
+    height: 49px;
+    cursor: pointer;
+    color: #fcf9f7;
+}
+.confirmDeleteCourse {
+    width: 512px;
+    position: relative;
+    background-color: #fcf9f7;
+    height: 298px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #04124b;
+    font-family: 'Inria Serif';
+}
+

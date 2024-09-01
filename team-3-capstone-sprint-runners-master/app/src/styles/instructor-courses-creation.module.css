@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .rectangle {
+    width: 50%;
+    height: 75%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #04124b;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+  }
+  
+  .button {
+    width: 80%;
+    position: relative;
+    height: 60px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fcf9f7;
+    font-family: 'Inria Serif';
+  }
+  
+  .button div {
+    position: absolute;
+    height: 98.33%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 1.67%;
+    left: 0%;
+    border-radius: 15px;
+    background-color: #002975;
+    border: 1px solid #04124b;
+    box-sizing: border-box;
+  }
+  
+  .button b {
+    position: absolute;
+    height: 98.33%;
+    width: 89.31%;
+    top: 1.67%;
+    left: 5.51%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .textbox {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: -20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .title_textbox {
+    width: "100%";
+    position: "relative";
+    height: "73px";
+    text-align: "left";
+    font-style: "25px";
+    color: "#04124b";
+    font-style: "'Inria Serif'",;
+  }

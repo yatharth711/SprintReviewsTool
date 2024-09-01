@@ -1,0 +1,19 @@
+/* Page.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust based on your layout */
+}
+
+.roleSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roleButton, .studentButton, .instructorButton {
+  margin: 10px;
+  padding: 10px 20px;
+}

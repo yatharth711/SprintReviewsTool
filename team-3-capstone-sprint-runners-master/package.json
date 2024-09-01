@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@types/next": "^9.0.0",
+    "react-modal": "^3.16.1",
+    "formik": "^2.4.6",
+    "react-datepicker": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
+  }
+}

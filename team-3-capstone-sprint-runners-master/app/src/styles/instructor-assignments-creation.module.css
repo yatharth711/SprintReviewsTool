@@ -1,0 +1,269 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  background: inherit;
+  width: 100%;
+  margin-bottom: auto;
+  margin-left: 11vw;
+  padding: 1%;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: left;
+}
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-bottom: auto;
+  min-height: 80%;
+}
+.notificationsSection {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 1%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card{
+  width: 80%;
+  height: fit-content;
+  padding: 1%;
+  margin: 2%;
+  border: 1px solid #002975;
+  height: 100vh;
+} 
+.rubric {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Add this line to distribute items evenly in a row */
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1.5%;
+  padding-top: 1%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);  
+  margin: 1%;
+  text-align: left;
+  height: 60%;
+}
+
+.rubricItem{
+  display: flex;
+  flex-direction: column;
+}
+.removeButton{
+  margin-bottom: 3%;
+}
+
+.questionCard {
+  width: 100%;
+  padding: 1%;
+  margin: 2%;
+  border: 1px solid #002975;
+  height: fit-content;
+}
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #ffffff;
+  padding: 1.5%;
+  padding-top: 1%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  margin: 1%;
+  margin-left: auto;
+  margin-right: 2%;
+  text-align: left;
+  height: 100%;
+}
+
+.groupReview {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: #ffffff;
+  padding: 1.5%;
+  padding-top: 1%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  margin: 1%;
+  margin-right: 2%;
+  text-align: center;
+  height: 100%;
+}
+
+.courseCards {
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+}
+.innerTitle{
+  display: flex;
+  text-align: left;
+}
+.courseCard {
+  width: 95%;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.createButton{
+  margin: 3%;
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+
+  font-family: 'Inria Serif';
+}
+
+.button {
+  width: 50%;
+  position: relative;
+  height: max-content;
+  cursor: pointer;
+  text-align: center;
+  font-size: medium;
+  color: #fcf9f7;
+  background-color: #04124b;
+  font-family: 'Inria Serif';
+}
+
+.button div {
+  position: absolute;
+  height: 98.33%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 1.67%;
+  left: 0%;
+  border-radius: 15px;
+  background-color: #002975;
+  border: 1px solid #04124b;
+  box-sizing: border-box;
+}
+
+.button b {
+  position: absolute;
+  height: 98.33%;
+  width: 89.31%;
+  top: 1.67%;
+  left: 5.51%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textbox {
+  width: 100%;
+  padding: 1%;
+  text-align: left;
+  font-size: small;
+}
+
+.title_textbox {
+  width: "100%";
+  position: "relative";
+  height: "73px";
+  text-align: "left";
+  font-style: "25px";
+  color: "#04124b";
+  font-style: "'Inria Serif'",;
+}
+.notificationsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notificationCard {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.release{
+  /* text-align: center; */
+  float: inline-end;
+  width: 30%;
+  padding: 1%;
+  margin: 2%;
+  font-family: 'Inria Serif';
+  font-size: large;
+  background-color: #002975;
+  color: #fcf9f7;
+  border-radius: 10px;
+}
+
+.innerAdvanced p{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+
+
+.criterion, .advancedButton, .closeModal, .setDueDate{
+  margin-top: 3%;
+  background-color: #002975;
+  color: #fcf9f7;
+  border: none;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+
+/* advanced options modal styling below */
+.advancedOptions{
+  background-color: #fcf9f7;
+  border: 1px solid #04124b;
+  width: 70%;
+  height: max-content;
+  padding: 3%;
+  /* justify-content:flex-start; */
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  /* margin-bottom: auto; */
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .rectangle{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.file-upload-input {
+  display: none;
+}
+
+.file-upload-label {
+  padding: 10px;
+  color: white;
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.file-upload-label:hover {
+  background-color: #45a049;
+}

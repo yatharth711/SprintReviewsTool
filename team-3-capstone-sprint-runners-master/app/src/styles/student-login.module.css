@@ -1,0 +1,15 @@
+.loginContainer{
+  text-align: center;
+  width: 30vw;
+  height: 45vh;
+}
+.backIcon {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+  cursor: pointer;
+}
+
